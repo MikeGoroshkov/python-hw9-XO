@@ -1,3 +1,4 @@
+import emoji
 
 def main():
     table1 = " + + +"
@@ -37,11 +38,11 @@ def main():
         or table1[1] == table2[3] == table3[5] == s or table1[5] == table2[3] == table3[1] == s:
             move -= 1
             break
-    print(" ИГРА ЗАКОНЧЕНА")
-    if move == 10: print("Победила дружба")
+    print(emoji.emojize(' ИГРА ЗАКОНЧЕНА :thumbs_up:'))
+    if move == 10: print(emoji.emojize('Победила дружба:handshake:'))
     else:
-        if s == "x": print("Победил первый игрок")
-        else: print("Победил второй игрок")
+        if s == "x": print(emoji.emojize('Победил первый игрок:1st_place_medal:'))
+        else: print(emoji.emojize('Победил второй игрок:1st_place_medal:'))
 
 if __name__ == '__main__':
    main()
